@@ -1,0 +1,42 @@
+Package: ecomet
+Title: A Tool for Mass Spectrometry–Based Ecological Metabolomics
+Version: 0.0.0.9000
+Authors@R: c(
+    person("Dale L.", "Forrister", , "dale.forrister@utexas.edu", role = c("aut")),
+    person("Min-Soo", "Last", , "minsoo1012@snu.ac.kr", role = c("aut","cre")))
+Description: The ecomet package provides tools for processing and analyzing mass
+    spectrometry–based metabolomics data in ecological and evolutionary
+    contexts. It establishes a standardized pipeline that integrates MS1
+    feature–abundance tables with MS2 spectral similarity to generate
+    common data products, including principal component analyses (PCA),
+    chemical dendrograms where tips represent compounds, principal
+    coordinates analyses (PCoA), and differential expression analyses.
+    Unlike existing metabolomics toolkits that focus primarily on
+    biomedical or cheminformatics applications, ecomet is designed
+    explicitly for ecometabolomics. It emphasizes workflows that link
+    metabolomic variation to ecological data, making it easier to move
+    from raw mass spectrometry files to reproducible, comparative analyses
+    of plant chemical diversity.
+License: AGPL-3
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Imports:
+  dplyr,
+  tidyr,
+  purrr,
+  readr,
+  ggplot2,
+  rlang,
+  grid,
+  lme4,
+  GUniFrac,
+  vegan,
+  ape
+Suggests:
+  caret,
+  ggrepel,
+  ggbeeswarm,
+  DescTools,
+  multcompView,
+  testthat (>= 3.0.0)
