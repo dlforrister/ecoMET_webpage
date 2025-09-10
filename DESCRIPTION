@@ -3,7 +3,7 @@ Title: A Tool for Mass Spectrometry–Based Ecological Metabolomics
 Version: 0.0.0.9000
 Authors@R: c(
     person("Dale L.", "Forrister", , "dale.forrister@utexas.edu", role = c("aut")),
-    person("Min-Soo", "Last", , "minsoo1012@snu.ac.kr", role = c("aut","cre")))
+    person("Min-Soo", "Choi", , "minsoo1012@snu.ac.kr", role = c("aut","cre")))
 Description: The ecomet package provides tools for processing and analyzing mass
     spectrometry–based metabolomics data in ecological and evolutionary
     contexts. It establishes a standardized pipeline that integrates MS1
@@ -34,9 +34,13 @@ Imports:
   vegan,
   ape
 Suggests:
-  caret,
-  ggrepel,
-  ggbeeswarm,
-  DescTools,
-  multcompView,
-  testthat (>= 3.0.0)
+    caret,
+    ggrepel,
+    ggbeeswarm,
+    DescTools,
+    multcompView,
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
+URL: https://dlforrister.github.io/ecoMET_webpage/
+VignetteBuilder: knitr
